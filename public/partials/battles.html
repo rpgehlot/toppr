@@ -1,0 +1,18 @@
+<div class="col-sm-12 col-md-12 col-lg-12">
+	<div ng-repeat="battle in battles" class="row list-battles">
+		<div style="text-align:center;color:white;font-size:18px;padding:3%;background-color:445790;" class="row">
+			Battle - {{$index+1}}
+		</div>
+		<div ng-repeat="(key,value) in battle" class="row battlerow">
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				{{key}}
+			</div>
+			<div  ng-if="value!='' " class="col-sm-6 col-md-6 col-lg-6">
+				{{value}}
+			</div>
+			<div  style="color:red;"ng-if="value=='' " class="col-sm-6 col-md-6 col-lg-6">
+				Undefined
+			</div>
+		</div>
+	</div>
+</div>

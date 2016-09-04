@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   		<title>Toppr Hiring Challenge</title>
+   		<link rel="stylesheet" href="static/bootstrap/dist/css/bootstrap.min.css">
+   		<link rel="stylesheet" href="static/css/style.css" />
+	</head>
+
+	<body ng-app="toppr">
+	<nav class="navbar navbar-default navbar-fixed-top navigation">
+  		<div class="container">
+    			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    			</div>
+    			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    				<p class="navbar-text">Battles Listing App</p>
+    			</div>
+  		</div>
+	</nav>
+	<div  class="container main">
+		<div class="row">
+			<div class="col-md-2 sidebar">
+				<ul>
+					<li >
+						<a ng-href="#/list">List Battles</a>
+					</li>
+					<li>
+						<a ng-href="#/count">Count Battles</a>
+					</li>
+					<li>
+						<a ng-href="#/search">Search Battles</a>
+					</li>
+					<li>
+						<a ng-href="#/stats">Stats Battles</a>
+					</li>
+				</ul>
+				<div class="col-md-12 portfolio">
+					<h5>Portfolio</h5>
+					<ul>
+						<li><a href="http://gloobdecor.com" target="blank">
+							http://gloobdecor.com
+							</a>
+						</li>
+						<li>
+							<a href="http://flipspacesvr.com" target="blank">
+								http://flipspacesvr.com
+							</a>
+						</li>
+						<li>
+							<a href="http://flipcouch.in" target="blank">
+							http://flipcouch.in</a></li>
+						<li>username-rp and password-rp12345</li>
+					</ul>
+				</div>
+			</div>
+			<div ng-view class="col-md-10">
+			</div>
+		</div>
+	</div>
+	</body>
+	<script src="static/jquery/dist/jquery.min.js"></script>
+	<script src="static/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="static/angular/angular.min.js"></script>
+	<script src="static/angular-route/angular-route.min.js"></script>
+	<script src="static/js/app.js"></script>
+</html>

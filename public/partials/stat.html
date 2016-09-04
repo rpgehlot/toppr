@@ -1,0 +1,35 @@
+<div class="row">
+	<div class="col-md-12 stat-row">
+		Most Active Attacker King is {{stats['most-active']['attacker_king']}}.
+	</div>
+	<div class="col-md-12 stat-row">
+		Most Active Defender King is {{stats['most-active']['defender_king']}}.
+	</div>
+	<div class="col-md-12 stat-row">
+		Most Active Region is {{stats['most-active']['region']}}.
+	</div>
+	<div class="col-md-12 stat-row">
+		Most Active Battle name is {{stats['most-active']['name']}}.
+	</div>
+	<div class="col-md-12 stat-row">
+		Attacker Outcome for number of wins is {{stats['attacker_outcome']['win']}}.
+	</div>
+	<div class="col-md-12 stat-row">
+		Attacker Outcome for number of wins is {{stats['attacker_outcome']['loss']}}.
+	</div>
+	<div class="col-md-12 stat-row">
+		Differnent types of battle are  
+		<span ng-repeat="item in stats['battle_types']">
+			<b>{{item}}</b>, 
+		</span>
+	</div>
+	<div class="col-md-12 stat-row">
+		Maximum defender size is {{stats['defender_size']['max']}}.
+	</div>
+	<div class="col-md-12 stat-row">
+		Minimum defender size is {{stats['defender_size']['min']}}.
+	</div>
+	<div class="col-md-12 stat-row">
+		Average defender size is {{stats['defender_size']['average']}}.
+	</div>
+</div>
